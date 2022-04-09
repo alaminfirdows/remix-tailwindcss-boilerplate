@@ -1,33 +1,16 @@
+import { Link } from '@remix-run/react'
+
 export default function Index() {
-	return (
-		<div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
-			<h1>Welcome to Remix</h1>
-			<ul>
-				<li>
-					<a
-						target='_blank'
-						href='https://remix.run/tutorials/blog'
-						rel='noreferrer'>
-						15m Quickstart Blog Tutorial
-					</a>
-				</li>
-				<li>
-					<a
-						target='_blank'
-						href='https://remix.run/tutorials/jokes'
-						rel='noreferrer'>
-						Deep Dive Jokes App Tutorial
-					</a>
-				</li>
-				<li>
-					<a
-						target='_blank'
-						href='https://remix.run/docs'
-						rel='noreferrer'>
-						Remix Docs
-					</a>
-				</li>
-			</ul>
-		</div>
-	);
+    return (
+        <div className="h-screen bg-neutral-900 grid place-content-center font-['Signika_Negative']">
+            <div className="text-center space-y-3">
+                <h3 className="text-green-600 font-bold text-7xl">
+                    Hello Remix
+                </h3>
+                <p className="text-gray-300 text-lg font-light">
+                    Just another Remix and tailwindcss boilerplate.
+                </p>
+            </div>
+        </div>
+    )
 }
